@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part 6. Programming Assignment</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src = "https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src = "https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type = "text/javascript">
+            var index = 1;
+
+            function changeStatus()
+            {
+                document.getElementById("userinput").style.display = "none";
+                var number = document.getElementById("exampleInputName2").value;
+                displayInput(number);
+                document.getElementById("userinput").innerHTML = document.getElementById("inputMultipleName");
+            }
+
+            function displayInput(number)
+            {
+                while(number > 0)
+                {
+                    var displayLabel = document.createElement("label");
+                    displayLabel.setAttribute("for", "exampleInputChildren");
+                    var labelText = document.createTextNode("Please enter the name of child number" + index.toString());
+                    displayLabel.appendChild(labelText);
+
+                    var displayInput = document.createElement("input");
+                    displayInput.setAttribute("type", "children");
+                    displayInput.setAttribute("class", "form-control");
+                    displayInput.setAttribute("id", "exampleInputChildren" + index.toString());
+                    displayInput.setAttribute("name", "exampleInputChildren" + index.toString());
+                    displayInput.setAttribute("placeholder", "Children Name");
+                    var jump = document.createElement("br");
+
+                    number = number - 1;
+                    index = index + 1;
+                    document.getElementById("inputMultipleName").appendChild(displayLabel);
+                    document.getElementById("inputMultipleName").appendChild(displayInput);
+                    document.getElementById("inputMultipleName").appendChild(jump);
+                }
+
+                var submitButton = document.createElement("button");
+                submitButton.setAttribute("type", "submit");
+                submitButton.setAttribute("class", "btn btn-primary");
+                var buttonText = document.createTextNode("Submit Query");
+                submitButton.appendChild(buttonText);
+                document.getElementById("inputMultipleName").appendChild(submitButton);
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class = "jumbotron">
+                <h1>Part 6. Programming Assignment</h1>
+                <p>Please input your information!</p>
+            </div>
+
+            <form class = "form-horizontal" method = "GET" id = "userinput">
+                <div class = "form-group">
+                    <label for = "exampleInputName2">How many children do you have?</label>
+                    <input type = "text" class = "form-control" id = "exampleInputName2" placeholder = "Number">
+                </div>
+                <br>
+                <button type = "submit" class = "btn btn-primary" onclick = "changeStatus()">Submit Query</button>
+            </form>
+
+            <form class = "form-horizontal" action = "HW1_Part6" method = "POST">
+                <div class = "form-group" id = "inputMultipleName">
+
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

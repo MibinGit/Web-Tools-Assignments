@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part 4. Programming Assignment</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src = "https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src = "https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class = "jumbotron">
+                <h1>Part 4. Programming Assignment</h1>
+                <p>Please input your personal information!</p>
+                <p>Using getParameterNames() method</p>
+            </div>
+
+            <form class = "form-horizontal" action = "HW1_Part4" method = "POST">
+                <div class = "form-group">
+                    <label for = "inputEmail3" class = "col-sm-2 control-label">Email :</label>
+                    <div class = "col-sm-10">
+                        <input type = "email" class = "form-control" id = "inputEmail3" name = "email" placeholder = "Email">
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "inputPassword3" class = "col-sm-2 control-label">Password :</label>
+                    <div class = "col-sm-10">
+                        <input type = "password" class = "form-control" id = "inputPassword3" name = "password" placeholder = "Password">
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "inputConfirmPassword3" class = "col-sm-2 control-label">Confirm Password :</label>
+                    <div class = "col-sm-10">
+                        <input type = "password" class = "form-control" id = "inputConfirmPassword3" name = "repassword" placeholder = "Confirm Password">
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                   <label for = "exampleInputFile" class = "col-sm-2 control-label">Upload Your Picture :</label>
+                   <input type = "file" name = "file" id = "file">
+                </div>
+
+                <div class = "form-group">
+                    <label for = "inputGender3" class = "col-sm-2 control-label">Gender :</label>
+                    <div class = "col-sm-10">
+                        <label class = "radio-inline">
+                            <input type = "radio" name = "inlineRadioOptions" id = "inlineRadio1" value = "Male"> Male
+                        </label>
+
+                        <label class = "radio-inline">
+                            <input type = "radio" name = "inlineRadioOptions" id = "inlineRadio2" value = "Female"> Female
+                        </label>
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "inputCountry3" class = "col-sm-2 control-label">Select Country :</label>
+                    <div class = "col-sm-10">
+                        <select class = "form-control" name = "country">
+                            <option>China</option>
+                            <option>Japan</option>
+                            <option>Korea</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "inputHobby3" class = "col-sm-2 control-label">Hobby :</label>
+                    <div class = "col-sm-10">
+                        <label class = "checkbox-inline">
+                            <input type = "checkbox" id = "inlineCheckbox1" value = "Comic Book" name = "hobby"> Comic Book
+                        </label>
+
+                        <label class = "checkbox-inline">
+                            <input type = "checkbox" id = "inlineCheckbox2" value = "Football" name = "hobby"> Football
+                        </label>
+
+                        <label class = "checkbox-inline">
+                            <input type = "checkbox" id = "inlineCheckbox3" value = "Basketball" name = "hobby"> Basketball
+                        </label>
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "inputAddres3" class = "col-sm-2 control-label">Address :</label>
+                    <div class = "col-sm-10">
+                        <textarea class = "form-control" rows = "3" name = "address" placeholder = "Address"></textarea>
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                    <div class = "col-sm-offset-2 col-sm-10">
+                        <div class = "checkbox">
+                            <label>
+                                <input type = "checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "form-group">
+                    <div class = "col-sm-offset-2 col-sm-10">
+                        <button type = "submit" class = "btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Programming Assignment</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src = "https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src = "https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+        <script src = "https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <nav class = "navbar navbar-expand-md bg-dark navbar-dark">
+            <a class = "navbar-brand" href = "#">Assignemnt</a>
+
+            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#collapsibleNavbar">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse" id = "collapsibleNavbar">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "http://localhost:8080/Part1.html">PART1 LINK</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "http://localhost:8080/csv">PART5 LINK</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "http://localhost:8080/excel">PART6 LINK</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "http://localhost:8080/movie">PART7 LINK</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "http://localhost:8080/book">PART8 LINK</a>
+                    </li>
+                </ul>
+            </div>  
+        </nav>
+        <br>
+
+        <div class = "jumbotron">
+            <h3><b>Part 1. Programming Assignment</b></h3>
+            <p>You will be using a session object to store and retrieve selected items from a simple shopping cart application.</p>
+            <p>Shopping cart applications typically allow users to select items from a catalog and place them in a virtual shopping cart.</p>
+            <p>When the user selects some items and presses the Add to Cart" button, the servlet will add the selected items to the session</p>
+            <p>object and then retrieve all of the items currently in the session object and then display them in the browser.</p>
+            <p>Removing an item from the shopping cart will be from the same servlet. Use URL-rewriting or hidden fields as necessary.</p>
+            <p>There are 3 different types of products in this application as shown below:</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 2. Reading Assignment</b></h3>
+            <p>http://pdf.moreservlets.com/More-Servlets-and-JSP-Chapter-04.pdf</p>
+            <p>http://pdf.moreservlets.com/More-Servlets-and-JSP-Chapter-05.pdf</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 3. Reading Assignment (Inside Servlets)</b></h3>
+            <p>https://www.safaribooksonline.com/library/view/java-for-the/073571195X/ch02.html</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 4. Reading Assignment (JDBC) - Attached</b></h3>
+            <p>JDBC provides a standard library for accessing relational databases.</p>
+            <p>By using the JDBC API, you can access a wide variety of SQL databases with exactly the same Java syntax.</p>
+            <p>It is important to note that although the JDBC API standardizes the approach for connecting to databases,</p>
+            <p>the syntax for sending queries and committing transactions, and the data structure representing the result,</p>
+            <p>JDBC does not attempt to standardize the SQL syntax.</p>
+            <p>So, you can use any SQL extensions your database vendor supports.</p>
+            <p>However, since most queries follow standard SQL syntax, using JDBC lets you change database hosts, ports,</p>
+            <p>and even database vendors with minimal changes to your code.</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 5. Programming Assignment</b></h3>
+            <p>Read the attached CSV file using CsvJdbc Driver - http://csvjdbc.sourceforge.net</p>
+            <p>JSP page initially displays a FORM having a textbox for the user to enter the name of the CSV file.</p>
+            <p>This form will be submitted to a Spring MVC controller that will read the name of the file,</p>
+            <p>and connect to the CSV file using CsvJdbc. Once the connection is established, the Controller will get the data from the CSV file,</p>
+            <p>and print on the browser (you may use an HTML table if you want). When creating a URL-pattern use the extension .xls</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 6. Programming Assignment</b></h3>
+            <p>Read the attached Excel File using Apache POI - http://poi.apache.org/</p>
+            <p>Create a servlet that will read the excel file, and print the contents of the excel file to user’s browser.</p>
+            <p>When creating a URL-pattern use the extension .xls</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 7. Programming Assignment</b></h3>
+            <p>Create an application to browse movies and add new movies to the DB. (You can change/improve the views).</p>
+            <p>For those of you who don’t know how to create a database, we could create one on the server, and send you the Connection</p>
+            <p>information. [Refer to the screenshots on the next page]</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 8. Programming Assignment</b></h3>
+            <p>Create an application using PreparedStatement to enter the books to the database whose details shown on the next page.</p>
+        </div>
+    </body>
+</html>

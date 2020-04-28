@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Programming Assignment</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src = "https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src = "https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+        <script src = "https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <nav class = "navbar navbar-expand-md bg-dark navbar-dark">
+            <a class = "navbar-brand" href = "#">Assignemnt</a>
+
+            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#collapsibleNavbar">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse" id = "collapsibleNavbar">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "http://localhost:8080/Hw1/HW1_Part2">PART2 LINK</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "http://localhost:8080/Hw1/Part3.html">PART3 LINK</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "http://localhost:8080/Hw1/Part4.html">PART4 LINK</a>
+                    </li>    
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "http://localhost:8080/Hw1/Part5.html">PART5 LINK</a>
+                    </li>  
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "http://localhost:8080/Hw1/HW1_Part6">PART6 LINK</a>
+                    </li>  
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "#">PART7 LINK</a>
+                    </li>  
+                </ul>
+            </div>  
+        </nav>
+        <br>
+
+        <div class = "jumbotron">
+            <h3><b>Part 1. Reading Assignment</b></h3>
+            <p>http://pdf.coreservlets.com/HTTP-Request-Headers.pdf</p>
+            <p>http://pdf.coreservlets.com/HTTP-Status-Codes.pdf</p>
+            <p>http://pdf.coreservlets.com/HTTP-Response-Headers.pdf</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 2. Programming Assignment</b></h3>
+            <p>Write a servlet that displays request headers using:</p>
+            <p>Enumeration getHeaderNames() and Enumeration getHeaders(String name)</p>
+            <p>https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 3. Programming Assignment</b></h3>
+            <p>Create a servlet to read and display user input from the following form (your form design does not need to be the same as the form below.</p>
+            <p>As long as you provide the same fields, that is fine. You may ignore the layout, but if you know Bootstrap and CSS, you may use it.).</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 4. Programming Assignment</b></h3>
+            <p>Redo Part 3 by using getParameterNames() method.</p>
+            <p>https://docs.oracle.com/javaee/7/api/javax/servlet/ServletRequest.html#getParameterNames--</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 5. Programming Assignment</b></h3>
+            <p>Redo Part 3 by using getParameterMap() method.</p>
+            <p>https://docs.oracle.com/javaee/7/api/javax/servlet/ServletRequest.html#getParameterMap--</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 6. Programming Assignment</b></h3>
+            <p>Use only 1 servlet to implement the application whose screenshots are shown in the attached document.</p>
+            <p>Initially form is displayed in the doGet method, and initially form submission will be handled in JavaScript that creates the page.</p>
+            <p>Now, this form (2nd screenshot) is to be submitted via POST so that the same servlet could handle this request in the same servlet.</p>
+        </div>
+
+        <div class = "jumbotron">
+            <h3><b>PART 7. Programming Assignment</b></h3>
+            <p>You will be using a session object to store and retrieve selected items from a simple shopping cart application.</p>
+            <p>Shopping cart applications typically allow users to select items from a catalog and place them in a virtual shopping cart.</p>
+            <p>When the user selects some items and presses the Add to Cart" button, the servlet will add the selected items to the session</p>
+            <p>object and then retrieve all of the items currently in the session object and then display them in the browser.</p>
+            <p>Removing an item from the shopping cart will be from the same servlet. Use URL-rewriting or hidden fields as necessary.</p>
+            <p>There are 3 different types of products in this application as shown below:</p>
+        </div>
+
+    </body>
+</html>

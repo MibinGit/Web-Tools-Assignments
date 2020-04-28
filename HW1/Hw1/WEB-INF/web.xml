@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+      <servlet-name>HW1_Part2</servlet-name>
+      <servlet-class>HW1_Part2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>HW1_Part2</servlet-name>
+      <url-pattern>/HW1_Part2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>HW1_Part3</servlet-name>
+      <servlet-class>HW1_Part3</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>HW1_Part3</servlet-name>
+      <url-pattern>/HW1_Part3</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>HW1_Part4</servlet-name>
+      <servlet-class>HW1_Part4</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>HW1_Part4</servlet-name>
+      <url-pattern>/HW1_Part4</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>HW1_Part5</servlet-name>
+      <servlet-class>HW1_Part5</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>HW1_Part5</servlet-name>
+      <url-pattern>/HW1_Part5</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>HW1_Part6</servlet-name>
+      <servlet-class>HW1_Part6</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>HW1_Part6</servlet-name>
+      <url-pattern>/HW1_Part6</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>Main.html</welcome-file>
+    </welcome-file-list>
+</web-app>
